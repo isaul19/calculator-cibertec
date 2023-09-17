@@ -21,7 +21,7 @@ public class CalculatorComponents {
         createComponents();
     }
     
-    public void createComponents() {
+    private void createComponents() {
         JLabel labelTitle = new JLabel("Calcular Promedio");
         labelTitle.setBounds(226, 12, 145, 15);
         panel.add(labelTitle);
