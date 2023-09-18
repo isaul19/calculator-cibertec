@@ -1,10 +1,11 @@
-package controllers;
+package events;
 
-import gui.CalculatorComponents;
 import utils.CalculatorUtils;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import components.CalculatorComponents;
 
 public class CalculatorEvents {
     private CalculatorComponents components;

@@ -1,8 +1,9 @@
-package gui;
+package views;
 
 import javax.swing.*;
 
-import controllers.CalculatorEvents;
+import components.CalculatorComponents;
+import events.CalculatorEvents;
 
 public class Calculator extends JFrame {
 	private static final long serialVersionUID = 1L;
