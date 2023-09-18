@@ -1,16 +1,17 @@
 package events;
 
 import utils.CalculatorUtils;
+import utils.Errors;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import components.CalculatorComponents;
+import gui.CalculatorGui;
 
 public class CalculatorEvents {
-    private CalculatorComponents components;
+    private CalculatorGui components;
 
-    public CalculatorEvents(CalculatorComponents components) {
+    public CalculatorEvents(CalculatorGui components) {
         this.components = components; 
         createEvents(); 
     }
@@ -28,12 +29,12 @@ public class CalculatorEvents {
             	String note3Text = components.getInputNote3().getText();
             	
             	if (!CalculatorUtils.isValidStudent(student)) {
-            		CalculatorUtils.showError("Ingresa un nombre de estudiante válido.");
+            		Errors.showError("Ingresa un nombre de estudiante válido.");
             		return;
             	}
             	
                 if (!CalculatorUtils.isValidNote(note1Text) || !CalculatorUtils.isValidNote(note2Text) || !CalculatorUtils.isValidNote(note3Text)) {
-                    CalculatorUtils.showError("Ingresa notas válidas entre 0 y 20");
+                    Errors.showError("Ingresa notas válidas entre 0 y 20");
                     return;
                 }
 

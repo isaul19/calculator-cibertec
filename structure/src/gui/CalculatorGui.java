@@ -1,11 +1,11 @@
-package components;
+package gui;
 
 import javax.swing.*;
-import java.awt.*;
 
-public class CalculatorComponents {
+public class CalculatorGui {
 
     private JPanel panel;
+    
     private JTextField inputName;
     private JTextField inputNote1;
     private JTextField inputNote2;
@@ -14,14 +14,14 @@ public class CalculatorComponents {
     private JLabel labelAverage;
     private JLabel labelResult;
 
-    public CalculatorComponents() {
+    public CalculatorGui() {
         panel = new JPanel();
         panel.setLayout(null);
         
-        createComponents();
+        createGui();
     }
     
-    private void createComponents() {
+    private void createGui() {
         JLabel labelTitle = new JLabel("Calcular Promedio");
         labelTitle.setBounds(226, 12, 145, 15);
         panel.add(labelTitle);

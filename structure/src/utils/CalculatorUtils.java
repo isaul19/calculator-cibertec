@@ -1,7 +1,5 @@
 package utils;
 
-import javax.swing.JOptionPane;
-
 public class CalculatorUtils {
     public static boolean isValidStudent(String student) {
         return student != null && !student.trim().isEmpty();
@@ -14,9 +12,5 @@ public class CalculatorUtils {
         } catch (NumberFormatException e) {
             return false;
         }
-    }
-
-    public static void showError(String message) {
-        JOptionPane.showMessageDialog(null, message, "Error", JOptionPane.ERROR_MESSAGE);
     }
 }
