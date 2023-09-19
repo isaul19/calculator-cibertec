@@ -23,12 +23,14 @@ public class App extends JFrame{
     private Calculator calculatorView;
 
     public App() {
+    	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    	setLocationRelativeTo(null);
     	setSize(600, 450);
+    	
     	views();
-    	inicializeGui();
+    	inicializeLayout();
     	inicializeEvents();
     	
-    	setLocationRelativeTo(null);
     }
     
     private void views() {
@@ -44,10 +46,9 @@ public class App extends JFrame{
          getContentPane().add(cardPanel);
     }
     
-    private void inicializeGui() {
+    private void inicializeLayout() {
         layout = new AppLayout();
         getContentPane().add(layout.getPanel(), BorderLayout.SOUTH);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
     private void inicializeEvents() {
