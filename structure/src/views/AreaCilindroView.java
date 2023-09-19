@@ -5,14 +5,14 @@ import javax.swing.*;
 import events.AreaCilindroEvents;
 import gui.AreaCilindroGui;
 
-public class AreaCilindro extends JFrame {
+public class AreaCilindroView extends JFrame {
 	private static final long serialVersionUID = 2L;
 	
 	private JPanel cilindroPanel;
 	private AreaCilindroGui components;
 	private AreaCilindroEvents events;
 
-    public AreaCilindro() {
+    public AreaCilindroView() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 598, 354);
         

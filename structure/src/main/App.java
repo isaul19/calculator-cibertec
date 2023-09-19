@@ -8,8 +8,8 @@ import javax.swing.JPanel;
 
 import events.AppEvents;
 import layouts.AppLayout;
-import views.AreaCilindro;
-import views.Calculator;
+import views.AreaCilindroView;
+import views.CalculatorView;
 
 public class App extends JFrame{
     private static final long serialVersionUID = 1L;
@@ -19,8 +19,8 @@ public class App extends JFrame{
     private AppLayout layout;
     private AppEvents events;
     
-    private AreaCilindro areaCilindroView;
-    private Calculator calculatorView;
+    private AreaCilindroView areaCilindroView;
+    private CalculatorView calculatorView;
 
     public App() {
     	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -37,8 +37,8 @@ public class App extends JFrame{
     	 cardLayout = new CardLayout();
          cardPanel = new JPanel(cardLayout);
 
-         areaCilindroView = new AreaCilindro();
-         calculatorView = new Calculator();
+         areaCilindroView = new AreaCilindroView();
+         calculatorView = new CalculatorView();
 
          cardPanel.add(areaCilindroView.getContentPane(), "AreaCilindro");
          cardPanel.add(calculatorView.getContentPane(), "Calculator");
